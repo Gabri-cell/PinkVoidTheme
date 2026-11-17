@@ -1,1 +1,21 @@
-.vscode
+.vscode/
+
+# Build output
+dist/
+*.zip
+*.xpi
+*.crx
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

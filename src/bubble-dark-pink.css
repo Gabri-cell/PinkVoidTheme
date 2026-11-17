@@ -1,0 +1,161 @@
+/* ============================================================
+   PinkVoidTheme — Cross-browser website styling
+   Compatible with Chrome, Edge, Firefox, Safari
+   ============================================================ */
+
+/* Links */
+a {
+  color: #E3C2CD;
+}
+a:hover {
+  color: #e87da1 !important;
+  border-color: #db5c85 !important;
+}
+a:visited {
+  color: #b04a6c !important;
+}
+a span {
+  color: #E3C2CD !important;
+}
+a span svg {
+  color: #db5c85 !important;
+}
+
+/* Text selection */
+::selection {
+  background: rgba(232, 82, 130, 0.3) !important;
+  color: #fff !important;
+}
+
+/* Scrollbars — Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #db5c85 #1a1a1a;
+}
+
+/* Scrollbars — WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #db5c85 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e87da1 !important;
+}
+
+/* Borders — pink tint */
+div, section, article, aside, main, footer, header, nav,
+ol, li, table, th, td, tr,
+input, textarea, select, fieldset, details, summary,
+blockquote, pre, hr {
+  border-color: #87475f !important;
+}
+
+/* Icons — pink tint (was 8-digit hex #DB5C85A6 → rgba) */
+svg[class*="icon"],
+i[class*="icon"],
+span[class*="icon"] {
+  color: rgba(219, 92, 133, 0.65) !important;
+}
+
+/* Focus visible (was 8-digit hex #A72B5338 → rgba) */
+*:focus-visible {
+  outline-color: #db5c85 !important;
+  background-color: rgba(167, 43, 83, 0.22) !important;
+}
+
+/* Buttons with icons — flattened selectors (no :has() or nesting) */
+button.icon,
+button i,
+button span,
+button .icon,
+button i.icon,
+button span.icon,
+button svg,
+button svg.icon {
+  border-color: rgba(255, 255, 255, 0.51) !important;
+  background-color: rgba(235, 83, 129, 0.22) !important;
+}
+
+button.icon:hover,
+button i:hover,
+button span:hover,
+button .icon:hover,
+button i.icon:hover,
+button span.icon:hover,
+button svg:hover,
+button svg.icon:hover {
+  background-color: rgba(181, 97, 124, 0.38) !important;
+  border-color: #db5c85 !important;
+}
+
+button.icon span,
+button i span,
+button span span,
+button svg span {
+  color: #db5c85 !important;
+}
+
+button svg {
+  color: #db5c85 !important;
+}
+
+button svg:hover {
+  color: #db5c85 !important;
+  outline: #db5c85 !important;
+}
+
+button svg:hover svg {
+  color: #db5c85 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #db5c85 !important;
+}
+
+/* Code */
+code, kbd, samp {
+  color: #db5c85 !important;
+}
+
+/* Active tabs / selected items */
+[role="tab"][aria-selected="true"],
+[class*="tab"][class*="active"],
+[class*="tab"][class*="selected"],
+[class*="tab"][class*="current"],
+.UnderlineNav-item[aria-current="page"],
+.UnderlineNav-item.selected,
+.nav-tabs > li.active > a,
+[aria-selected="true"] {
+  color: #db5c85 !important;
+  border-bottom-color: #db5c85 !important;
+}
+
+/* Inactive tabs / items */
+[role="tab"],
+[aria-selected="false"],
+.UnderlineNav-item {
+  color: #777 !important;
+}
+
+/* Syntax highlighting */
+.token.keyword, .hljs-keyword {
+  color: #db5c85 !important;
+}
+.token.string, .hljs-string {
+  color: #6dbe8a !important;
+}
+.token.function, .hljs-title.function_ {
+  color: #6ba3c9 !important;
+}
+.token.number, .hljs-number {
+  color: #c9a06b !important;
+}
+.token.comment, .hljs-comment {
+  color: #555 !important;
+}
